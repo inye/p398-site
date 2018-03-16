@@ -5,7 +5,10 @@ results = public/index.html public/gallery.html public/story.html public/build.h
 
 all: $(results)
 
-public/%.html: %.html
+public/ru/%.html: ru/%.html ru/_header.html ru/_footer.html
+	m4 $< > $@
+
+public/%.html: %.html _header.html _footer.html
 	m4 $< > $@
 
 clean:
