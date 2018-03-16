@@ -17,7 +17,7 @@ clean:
 	rm $(results)
 
 serve:
-	busybox httpd -p 8030 -f -h public/
+	busybox httpd -p 8030 -f -c ../httpd.conf -h public/
 
 watch:
 	ls *.html ru/*.html | entr make
