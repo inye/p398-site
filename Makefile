@@ -11,5 +11,10 @@ public/ru/%.html: ru/%.html ru/_header.html ru/_footer.html
 public/%.html: %.html _header.html _footer.html
 	m4 $< > $@
 
+.PHONY: clean serve
+
 clean:
 	rm $(results)
+
+serve:
+	busybox httpd -p 8030 -f -h public/
