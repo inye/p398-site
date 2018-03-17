@@ -6174,3 +6174,51 @@ html, body {
     height: 100%;
     content: ' ';
     background: linear-gradient(white, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)); }
+
+
+/*!
+* Extracted from flag-icon-css-master
+*/
+
+.flag-icon {
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  position: relative;
+  display: inline-block;
+  width: 1.33333333em;
+  line-height: 1em;
+}
+.flag-icon:before {
+  content: "\00a0";
+}
+.flag-icon.flag-icon-squared {
+  width: 1em;
+}
+.flag-icon-gb {
+  background-image: url(/assets/flags/4x3/gb.svg);
+}
+.flag-icon-gb.flag-icon-squared {
+  background-image: url(/assets/flags/1x1/gb.svg);
+}
+.flag-icon-ru {
+  background-image: url(/assets/flags/4x3/ru.svg);
+}
+.flag-icon-ru.flag-icon-squared {
+  background-image: url(/assets/flags/1x1/ru.svg);
+}
+.flag-icon-us {
+  background-image: url(/assets/flags/4x3/us.svg);
+}
+.flag-icon-us.flag-icon-squared {
+  background-image: url(/assets/flags/1x1/us.svg);
+}
+
+
+/*!
+* Various custom styles
+*/
+
+.translation-required {
+  text-shadow: 0 0 16px #00FF00;
+}

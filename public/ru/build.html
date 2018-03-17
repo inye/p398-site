@@ -1,9 +1,56 @@
-define(`WX_PAGE_TITLE', `Design :: Project 398')
-include(`_header.html')
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" integrity="sha256-HAaDW5o2+LelybUhfuk0Zh2Vdk8Y2W2UeKmbaXhalfA=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="/assets/theme.css" type="text/css">
+  <title>Конструкция :: Проект 398</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-115510563-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-115510563-1');
+  </script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-secondary sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="/ru/index.html">Проект 398</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/ru/story.html">История</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/ru/build.html">Конструкция</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/ru/team.html">Команда</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/ru/gallery.html">Галерея</a>
+          </li>
+        </ul>
+        <a class="navbar-brand text-info" href="/build.html">Перейти на английский&nbsp;
+          <span class="flag-icon flag-icon-gb"></span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
   <div class="py-5">
     <div class="container">
       <div class="row">
-        <div class="col-md-12 translation-required">
+        <div class="col-md-12">
           <h1 class="text-center display-3 text-primary">Цветок, который слышит и отвечает</h1>
 <p>
 <em>После обработки и осознания всех полученных и вычисленных данных мы приступили к разработке вариантов конструкции. Разобрав несколько вариантов, просчитав возможность их реализации своими силами и общий вид в целом, команда остановилась на варианте постамента с бутоном цветка. </em>
@@ -33,7 +80,7 @@ include(`_header.html')
   <div class="py-5">
     <div class="container">
       <div class="row">
-        <div class="col-md-12 translation-required">
+        <div class="col-md-12">
 
 </p>
 <p>
@@ -234,4 +281,32 @@ include(`_header.html')
       </div>
     </div>
   </div>
-include(`_footer.html')
+  <div class="text-center bg-primary text-white py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p>Создано с любовью резистами постсоветского пространства</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <a href="https://telegram.me/project398" class="text-white" target="_blank"><i class="fa fa-fw fa-telegram fa-3x mx-3"></i></a>
+          <a href="https://plus.google.com/u/0/112996545154531558651" class="text-white" target="_blank"><i class="fa fa-fw fa-3x fa-google-plus mx-3"></i></a>
+          <a href="https://www.instagram.com/project398/" class="text-white" target="_blank"><i class="fa fa-fw fa-instagram fa-3x mx-3"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"
+integrity="sha256-Y1rRlwTzT5K5hhCBfAFWABD4cU13QGuRN6P5apfWzVs=" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+      event.preventDefault(); $(this).ekkoLightbox();
+    });
+  </script>
+</body>
+
+</html>
+

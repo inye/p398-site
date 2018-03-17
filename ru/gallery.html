@@ -1,177 +1,44 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
-  <link rel="stylesheet" href="https://v40.pingendo.com/assets/4.0.0/default/theme.css" type="text/css">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-115510563-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-115510563-1');
-  </script>
-</head>
-
-<body>
-  <nav class="navbar navbar-expand-md navbar-dark bg-secondary sticky-top">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">Widget X</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Начало</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="story.html">Легенда
-              <br> </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="build.html">Сборка</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="team.html">Команда</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="gallery.html">Галерея</a>
-          </li>
-        </ul>
-        <a class="navbar-brand text-info" href="https://project398.com/gallery.html">Перейти на английский&nbsp;
-          <img src="usa.png" width="30" height="30" class="d-inline-block align-top" alt="">
-        </a>
-      </div>
-    </div>
-  </nav>
+define(`WX_PAGE_TITLE', `Галерея :: Проект 398')
+include(`ru/_header.html')
   <div class="py-5 text-center bg-secondary">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1 class="mb-4 text-white">Наши невьебенные фоточки</h1>
+          <h1 class="mb-4 text-white">Фотоматериалы</h1>
         </div>
       </div>
-      <div class="row justify-content-center"> ...
-        <link rel="stylesheet" type="text/css" media="all" href="/main/css/ekko-lightbox.css"> ...
-        <div class="col-sm">
-          <div class="mx-2 my-2 card card-photo text-white bg-dark">
-            <a href="/main/img/gallery/crimea-2016/DSC_0645.jpg" data-toggle="lightbox" data-gallery="crimea-2016">
-              <img src="/main/img/gallery/crimea-2016/preview.jpg" class="card-img-top" alt="Предпросмотр галереи"> </a>
-            <div data-toggle="lightbox" data-gallery="crimea-2016" data-remote="/main/img/gallery/crimea-2016/DSC_0556.jpg" data-title=""></div>
-            <div data-toggle="lightbox" data-gallery="crimea-2016" data-remote="/main/img/gallery/crimea-2016/DSC_0559.jpg" data-title=""></div>
-            <div data-toggle="lightbox" data-gallery="crimea-2016" data-remote="/main/img/gallery/crimea-2016/DSC_0655.jpg" data-title=""></div>
-            <div data-toggle="lightbox" data-gallery="crimea-2016" data-remote="/main/img/gallery/crimea-2016/DSC_0662.jpg" data-title=""></div>
-            <div data-toggle="lightbox" data-gallery="crimea-2016" data-remote="/main/img/gallery/crimea-2016/DSC_0674.jpg" data-title=""></div>
-            <div data-toggle="lightbox" data-gallery="crimea-2016" data-remote="/main/img/gallery/crimea-2016/DSC_0695.jpg" data-title=""></div>
-            <div data-toggle="lightbox" data-gallery="crimea-2016" data-remote="/main/img/gallery/crimea-2016/DSC_0698.jpg" data-title=""></div>
-            <div data-toggle="lightbox" data-gallery="crimea-2016" data-remote="/main/img/gallery/crimea-2016/DSC_0703.jpg" data-title=""></div>
-            <div class="card-body">
-              <p class="card-text">Россия, Республика Крым, октябрь 2016.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item text-white bg-dark">Снято на Nikon D750</li>
-            </ul>
-          </div>
-        </div> ...
-        <script type="text/javascript" src="/main/js/ekko-lightbox.min.js"></script>
-        <script type="text/javascript" src="/main/js/main.js" async=""></script> ... main.js ... // Ekko's Lightbox want this. Okay. $(document).on('click', '[data-toggle="lightbox"]', function(event) { event.preventDefault(); $(this).ekkoLightbox(); }); ...
         <div class="row">
           <div class="col-md-3 col-6 p-1">
-            <a href="#">
-              <img class="d-block img-fluid" src="https://pingendo.github.io/templates/sections/assets/gallery_1.jpg"> </a>
+            <a href="/assets/images/build-image1.png" data-toggle="lightbox" data-gallery="main">
+              <img class="d-block img-fluid" src="/assets/images/build-image1.png" /> </a>
           </div>
           <div class="col-md-3 col-6 p-1">
-            <a href="#">
-              <img class="d-block img-fluid" src="https://pingendo.github.io/templates/sections/assets/gallery_5.jpg"> </a>
+            <a href="/assets/images/build-image2.png" data-toggle="lightbox" data-gallery="main">
+              <img class="d-block img-fluid" src="/assets/images/build-image2.png" /> </a>
           </div>
           <div class="col-md-3 col-6 p-1">
-            <a href="#">
-              <img class="d-block img-fluid" src="https://pingendo.github.io/templates/sections/assets/gallery_3.jpg"> </a>
+            <a href="/assets/images/build-image3.png" data-toggle="lightbox" data-gallery="main">
+              <img class="d-block img-fluid" src="/assets/images/build-image3.png" /> </a>
           </div>
           <div class="col-md-3 col-6 p-1">
-            <a href="#">
-              <img class="d-block img-fluid" src="https://pingendo.github.io/templates/sections/assets/gallery_4.jpg"> </a>
+            <a href="/assets/images/build-image4.png" data-toggle="lightbox" data-gallery="main">
+              <img class="d-block img-fluid" src="/assets/images/build-image4.png" /> </a>
           </div>
         </div>
         <div class="row">
           <div class="col-md-3 col-6 p-1">
-            <a href="#">
-              <img class="d-block img-fluid" src="https://pingendo.github.io/templates/sections/assets/gallery_6.jpg"> </a>
+            <a href="/assets/images/build-image5.png" data-toggle="lightbox" data-gallery="main">
+              <img class="d-block img-fluid" src="/assets/images/build-image5.png" /> </a>
           </div>
           <div class="col-md-3 col-6 p-1">
-            <a href="#">
-              <img class="d-block img-fluid" src="https://pingendo.github.io/templates/sections/assets/gallery_7.jpg"> </a>
+            <a href="/assets/images/build-image6.png" data-toggle="lightbox" data-gallery="main">
+              <img class="d-block img-fluid" src="/assets/images/build-image6.png" /> </a>
           </div>
           <div class="col-md-3 col-6 p-1">
-            <a href="#">
-              <img class="d-block img-fluid" src="https://pingendo.github.io/templates/sections/assets/gallery_8.jpg"> </a>
-          </div>
-          <div class="col-md-3 col-6 p-1">
-            <a href="#">
-              <img class="d-block img-fluid" src="https://pingendo.github.io/templates/sections/assets/gallery_9.jpg"> </a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-3 col-6 p-1">
-            <a href="#">
-              <img class="d-block img-fluid" src="https://pingendo.github.io/templates/sections/assets/gallery_10.jpg"> </a>
-          </div>
-          <div class="col-md-3 col-6 p-1">
-            <a href="#">
-              <img class="d-block img-fluid" src="https://pingendo.github.io/templates/sections/assets/gallery_11.jpg"> </a>
-          </div>
-          <div class="col-md-3 col-6 p-1">
-            <a href="#">
-              <img class="d-block img-fluid" src="https://pingendo.github.io/templates/sections/assets/gallery_12.jpg"> </a>
-          </div>
-          <div class="col-md-3 col-6 p-1">
-            <a href="#">
-              <img class="d-block img-fluid" src="https://pingendo.github.io/templates/sections/assets/gallery_13.jpg"> </a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-3 col-6 p-1">
-            <a href="#">
-              <img class="d-block img-fluid" src="https://pingendo.github.io/templates/sections/assets/gallery_15.jpg"> </a>
-          </div>
-          <div class="col-md-3 col-6 p-1">
-            <a href="#">
-              <img class="d-block img-fluid" src="https://pingendo.github.io/templates/sections/assets/gallery_2.jpg"> </a>
-          </div>
-          <div class="col-md-3 col-6 p-1">
-            <a href="#">
-              <img class="d-block img-fluid" src="https://pingendo.github.io/templates/sections/assets/gallery_14.jpg"> </a>
-          </div>
-          <div class="col-md-3 col-6 p-1">
-            <a href="#">
-              <img class="d-block img-fluid" src="https://pingendo.github.io/templates/sections/assets/gallery_16.jpg"> </a>
+            <a href="/assets/images/build-image7.png" data-toggle="lightbox" data-gallery="main">
+              <img class="d-block img-fluid" src="/assets/images/build-image7.png" /> </a>
           </div>
         </div>
       </div>
     </div>
-    <div class="text-center text-white py-5 bg-secondary">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h1 class="display-4">Создано с любовью резистами постсоветского пространства.</h1>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <a href="https://twitter.com/" class="text-white" target="_blank"><i class="fa fa-fw fa-twitter fa-3x mx-3"></i></a>
-            <a href="https://plus.google.com/" class="text-white" target="_blank"><i class="fa fa-fw fa-3x fa-google-plus mx-3"></i></a>
-            <a href="https://www.instagram.com/" class="text-white" target="_blank"><i class="fa fa-fw fa-instagram fa-3x mx-3"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </div>
-</body>
-
-</html>
+include(`ru/_footer.html')
