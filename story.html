@@ -5,67 +5,261 @@ include(`_header.html')
       <div class="row">
         <div class="col-md-12">
           <h1 class="text-center display-3 text-primary">The Story Behind</h1>
-<p>At first, it looked like a great idea to visit the Cold War museum in a real bunker 65 meters below ground. We had enough volunteers — a quorum no less, just enough to make a level 8 portal in front of the museum. But the reality turned out to be soviet-ish dull and grey. First, there was a 20 minutes long film on Cold War, laughably bad, badly rigged, filled with twisted facts. Going downstairs for as much as 18 levels was a picnic comparing to that. Right after the film we had 15 minutes long imitation of a nuclear strike. Actually, this bunker was never designed for missile launches; it was an alternate command center for long-range air force. Moreover, there never was any actual control center in here, just lots and lots of communication support hardware.</p>
-<p>[pics here]</p>
-<p>Some museum displays that followed were an improvement; not a bogus comparing to "missile launch" but still, it was a makeshift. At last we had something interesting: mechanical rooms and manholes; bricked in doors to the underground; metal waterproofing; closed doors to various shafts… Last remains of a bygone authenticity kept by airsoft and quest enthusiasts. They were the first we thought of when @k0leso dragged out two binders titled "RI A Case No.398.1 Wave-2". When we asked our guide about it, he just brushed it off, obviously not being a fan of all these quest lovers. After short but intense moral struggle an inner kleptomaniac won over, and the binders were tucked into our backpacks.</p>
-<p>Right before leaving the bunker we skipped through these binders. Obviously we didn't want to steal any documents containing national security information. But there we just some reports, schemes, descriptions, and oddly filled-in forms. All of them had excessive crossing outs with black marker. One of the binders had old 5-inch floppy disks barbarically tucked in. We also used a black light, just for the devil of it. Much to our surprise, glyphs KNOWLEDGE INSIDE were written on one of the binders. This whole thing ultimately transformed into a joke. Security guard kept a watching eye on us, but he was overall ok with out little 'research'.</p>
-<p>That's how we got these documents. @Inye, being eager after different odd things, took the binders to study the documents in them. Quickly, it became clear this hoax (if that was the case) was very elaborate and thorough. Whoever put these documents together, whoever was striking out everything with a black marker, they were doing that with loving care and diligence. Most of the documents were by some "RI A" dated back to the period between 1982 and 1986. One way or another, all of them were tied to projects 398.1 and 398.2, aka products 'Wave-1' and 'Wave-2'. There were enough copies, but some of these documents looked like originals, e.g. several 'staff reports' on some obviously failed experiments. There were some plans of nodes of some "sextature amplitude <redacted> modulator" that was assembled on discrete op amps. There was lots of everything. And sure enough, there were floppy disks.</p>
-<p>[pics]</p>
-<p>Eventually, @Sadist found these plans and schemes rather interesting. He borrowed everything that resembled technical documentation, disappeared for a week, and returned with some exciting news: these plans were for something like a communication device, a device very strange and like no other. 'Wave-1' was a transmitter; 'Wave-2' was a receiver. Transmitter's input was designed to operate on a range from 300 Hz to 3.5 kHz (that is a normal range for human voice); a twisted modulation with a constellation that resembles QAM; two outputs — low-powered one for interface with a certain product 'Funnel-1', and an odd one put through a chain of amplifiers with some odd specifications and ending with no less odd antenna. @Sadist has already put together from scratch some part of this system, as specifications were very intriguing. He was struggling, though, with modulators and demodulators because of too peculiar hardware components. @Sadist promised to bend his brain, and we could only hope.</p>
-<p>At this point we could no longer overcome our curiosity. We didn't care how these document ended up in the bunker; the question was whether we are able to do something with them or not. We also had floppy disks. Jumping ahead, I must say, they helped a lot with solving the problem of peculiar hardware components. Clearly, none of us had 5-inch floppy disk drive at hand. Moreover, we weren't even sure if modern computers could read the info on these disks. Eventually we found suitable disk drive in an 8-bit computer sitting around on a shelf. It took another week to turn it on, to find a suitable monitor (we use a TV set), to refresh our knowledge in programming floppy disk drive controller… Just as expected, the file system could not be read by any standard means. We had to experiment to find a track and sector sizes. Finally, bit-by-bit, we were able to read these floppy disks.</p>
-<p>It was easier onwards. Floppy disks were designed for an old M86 operating system, a soviet clone of a CP/M. The disks contained an assembler, a text editor, and a whole lot of source code. It seemed that the owner of the disks was working on EC-1840, a soviet computer operating on BM86 processor (a clone of the famous Intel 8086). It was just a matter of time to untangle the code and comments. It was a software version of the very same "sextature amplitude <redacted> modulator"; last edits were dated back 1990. Partial code for a demodulator was there as well, but seemed like it was unfinished. Core logic oozed away in elaborations of lots of border cases with such marks as "disturbance suppression", "distortion correction" and so on. Seems like we had everything we need to almost put together the 'Wave'. We've already forgotten about glyphs of the binder and that everything looked like a cheap hoax. The 'Wave' darted into our minds.</p>
-<p>We jokingly were telling each other that our wishes are no longer matter and we have to push the matter through. A lark's a lark, but each and every one of us felt more or less the same: we <strong><em>have</em></strong> to assemble the 'Wave', to send the message, to try to receive it. It took another two weeks to finish off the prototype.</p>
-<p>First tests came to nought. To be fair, we had some outputs, and they were 'zero'. An odd antenna picked <em>nothing</em>. Whip antenna, set to a supposed frequency of transmitter carrier, got the signal just fine, but 'Wave's' antenna input cascade was mute. The oddity of this deepened when we tried to transmit a simple sine wave with the whip and the 'Wave' got the signal just fine. In the proper physics sense it couldn't have happened, but there it was, happening.</p>
-<p>We took the prototype to <span style="text-decoration:underline;">%<em>username</em>%</span>'s office. We could connect the whip to a proper frequency analyzer there and try to get a grasp on what's happening. It was all the same. If the signal was transmitted by the 'Wave-1', everything was receiving it <strong>but</strong> the 'Wave-2'. If the signal was transmitted by anything <strong>but</strong> the 'Wave-1' (on a frequency of the 'Wave'), the 'Wave-2' received something. It wasn't getting the signal clear enough for a software demodulator to catch the signal, but at least we were getting something in input cascade. Transmitter was more calibrated, so we connected receiver to the frequency analyzer to find out the exact moment the signal got lost. It was fruitless, so we decided call it a day. We were about to leave, when we finally got the signal in the receiver, but…</p>
-<p>First of all, we were literally at the doorway, when we got the signal. Most of the devices were turned off; <span style="text-decoration:underline;">%<em>username</em>%</span> was about to shut the receiver down, so nothing could transmit this signal. Secondly, the signal was consistent, and the analyzer's screen, set to a vector mode, looked familiar. Thirdly, our scanners started buzzing simultaneously — a portal near the office was under attack. The attacker was no other than agent <strong>JARVIS</strong>.</p>
-<p>[pics]</p>
-<p>The signal stayed for couple seconds, then perished. We were staring at each other with confusion. Somebody looked out of the window; the streets were empty. Other one opened the scanner. There were no XM around the portal, and the portal itself was intact. We checked agent's Ingress profile — it was the very same <strong>JARVIS</strong>, with 1.2m APs and a Founder badge. There were definitely too much coincidence, and we immediately recalled those glyphs on one of the binders…</p>
-<p>No one got home that night; sleep was definitely out of the question as well. The frequency analyzer remained connected to the receiver, and we were monitoring its screen all night long (although, we were too afraid to touch it for some reasons). We were increasing portal level, we were using viruses on it and taking it down, we were experimenting with different mods… We turned on the transmitter and were using it in different modes. We were saying various words into the microphone in the hope of getting any result, any at all.</p>
-<p><strong>JARVIS</strong> never returned that night, however, the XM disappeared twice, and at the same time the 'Wave-2' was catching a signal. The first time it was bright and clear OPEN/ACCEPT glyph; the second time the signal was somewhat weaker, but we still could read a DATA glyph. We've finished our work at the crack of dawn. We turned off the transmitter, but we left the receiver and the analyzer on — <span style="text-decoration:underline;">%<em>username</em>%</span> kept his eye on both devices as he had a power nap and stayed for a new workday. The analyzer was silent the whole day. That evening, we gathered together to continue our research. We've got the signal half an hour later — again, it was a PORTAL glyph and simultaneously, the XM around the portal disappeared. There was no longer any doubt that we were transmitting something to the portal and receiving some message from it.</p>
-<p>It seemed like we've found an actual soviet research on the XM that were conducted way before Lynton-Wolfe's attempts, but the idea was too bold. However we did had a working prototype of a device that was reaching out either to the portal itself or to something or someone via the portal. Besides, it put the documents we've found in some context. We got a bit carried away by all those plans and floppy disks and forgot about reports and charts in those binders. And now their time has come.</p>
-<p>Considering all the assumptions, it all began to fall into place giving us a pretty interesting scenario. 'RI A' designed a device of voice-to-voice communication via portal network, the said Project 398. Apparent advantage of this idea is that neither ground or rocks nor water were blocking the signal. One communication station could be in the bunker, the other on a nuclear submarine or a strategic bomber. The 'Wave' product was the project's almost successful outcome. The connection was unstable, though: signal flow was unpredictable and some recurrent disturbance was appearing in the receiver input. It was spontaneous response on portal network. RI A knew nothing about glyph theory so those disturbance were never decoded. They also got stuck trying to filter out disturbance thus never finished a demodulator.</p>
-<p>The most interesting part was a 'Funnel-1' product, an interference module with a transmitter. One of the documents on the 'Funnel-1' mentioned some "self-organizing <redacted> vergence". It obviously was somehow connected to the Tunguska meteorite impact location. RI A had only so many 'Funnels', and most of those were always used in some arms developments casually mentioned in the documents.</p>
-<p>Looks like it was a Techtulhu no less. Soviet scientists were trying to avoid using scarce 'Funnels', but the signal flow as well as disturbance was weak and monotonous. That make sense: they had no stable source of XM of enough capacity they could control, so they had to rely on weak unstudied portals. A powerful portal next to a transmitter could've helped in this case, but the resonator technology either didn't yet exist at that time or remained unknown to the 'Wave' team.</p>
-<p>The story behind transmitter interfaces was quite interesting. 'RI A' perfectly understood the concept of XM sensitivity and the connection between XM and the unconscious, emotions, and creativity. It seemed like that was the reason all arms developments were doomed to failure: no sane creative person would want to kill. Anchorpersons, poets, and writers were engaged as operators on the 'Wave' test runs. They even tried to design some nice covers for the hardware, although by that time the Soviet design tradition was already on its last legs. All these efforts had slightly increased the signal flow, but also heavily increased the disturbance.</p>
-<p>@Ulovka jokingly suggested, "Let's put the microphone inside a flower and give it to some emotional girl". The idea was a success: some petals glued to the microphone, <span style="text-decoration:underline;">%<em>username</em>%</span> as an operator, and a level 8 portal next to the device allowed us to receive a glyph every several minutes. There were no XM around the portal at all. @Sadist put together a glyph-decoding contraption instead of a nonworking demodulator. We were carrying out "communication sessions" from time to time, however, the glyphs were more or less the same, coming in one by one: PORTAL, MESSAGE, and ACCEPT. Sometimes we were getting SEARCH and MORE.</p>
-<p>On February 10, we held council. We seriously needed a Techtulhu in order to fully transmit messages to the portal network. Last Camp Navarro participants had access to them, and we were counting on this year's Camp. However, a trip to the US as a team was an impossible task. We couldn't fully explain how we got the documents, and we didn't want to part with a working prototype of the 'Wave', so asking actual participants for help wasn't an option as well.</p>
-<p>Four days later, new anomaly series were announced. Next to a much-anticipated Camp Navarro announcement was another line: Schloß Kaltenberg, a XIII century castle just an hour drive from Munich airport. That was our chance.</p>
-<p>The same evening we began putting together our application.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--
-  <div class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <img class="img-fluid d-block" src="/assets/wall1.jpg"> </div>
-      </div>
-    </div>
-  </div>
-  -->
-  <div class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h1 class="text-center display-3 text-primary">Behind the XM Research in the USSR</h1>
-<p><strong><span style="text-decoration:underline;">1900s—1910s:</span></strong> Major XM anomalies throughout Eurasia. XM concentration within the Russian Empire is increasing by leaps and bounds. Scarce portal network can't cope with XM streams. These powerful XM streams affect people's minds and emotions; revolutions are breaking out in the Russian Empire.</p>
-<p><strong><span style="text-decoration:underline;">1908:</span></strong> The Tunguska event. Supposedly, that was an XM emission from some natural portal.</p>
-<p><strong><span style="text-decoration:underline;">1920s:</span></strong> XM sensitivity discovered in the USSR, a Golden Age of researches. Psychoanalysis is developing; researches are conducted in Children's Home, also known as the Solidarity International Experimental Home. A connection between XM and creativity is discovered. People with high XM sensitivity are major figures in Russian culture <em>(see: Kandinsky; Rodchenko; Malevich; Mayakovski)</em>.</p>
-<p><strong><span style="text-decoration:underline;">1920s:</span></strong> XM streams are slowly stabilizing.</p>
-<p><strong><span style="text-decoration:underline;">1927:</span></strong> The first expedition arrives to the Tunguska event site. Some rock samples are brought to Moscow. First researches are showing these samples' capability to focus the XM.</p>
-<p><strong><span style="text-decoration:underline;">1930s:</span></strong> XM experiments failures. First troubles for Vasily Stalin; the Great Purge of all XM sensitive citizens; siloviki fully classify everything they have on the XM; rock samples from the Tunguska event site are locked up in OGPU vaults: full-on oblivion.</p>
-<p><strong><span style="text-decoration:underline;">1960s:</span></strong> Destalinization. KGB investigated obliterated archives.</p>
-<p><strong><span style="text-decoration:underline;">1970s:</span></strong> The Cold War. Ustinov was named Minister of Defense. Undergoing ordnance alterations in the Soviet army. KGB archives provide documents on the XM. 'RI A' is created. Studies and researches in developing an XM weaponry are conducted.</p>
-<p><strong><span style="text-decoration:underline;">1977:</span></strong> The first XM amplification device is assembled of rock samples fragments from the Tunguska site. Self-sustained resonance to amplify XM works much like a laser <em>(see: project 17.2, product "Taiga")</em>.</p>
-<p><strong><span style="text-decoration:underline;">1977, September 20:</span></strong> First "Taiga" test run; an unexpected reality disruption outside Petrozavodsk as a result <em>(see: The Petrozavodsk phenomenon)</em>. It is clear that the arms potential is huge, but the methods to control it are unobvious.</p>
-<p><strong><span style="text-decoration:underline;">1978—1984:</span></strong> "Taiga" becomes a full-bodied Tehtulhu, a device that can sustain a stable reality disruption and an XM stream (product "Funnel", project 317). Uncontrolled experiments with XM devices operator interface in order to get the unconscious involved.</p>
-<p><strong><span style="text-decoration:underline;">1982:</span></strong> Researches on communication system of unlimited range by plugging into the portal network via the 'Funnel". Huge plans on using this system to communicate with submarines, protected command posts for military spacecraft, and so on.</p>
-<p><strong><span style="text-decoration:underline;">1985:</span></strong> Projects 398.1, the 'Wave-1', and 398.2, the 'Wave-2', (transmitter and receiver of acoustically modulated XM via portal network) are created. A stable connection can be established once every 100 tries, the patterns are undecipherable. The use of the 'Wave-2' causes a disturbance in the portal networks with an odd quadrature-like modulation with a 60º change.</p>
-<p><strong><span style="text-decoration:underline;">1986, January 29:</span></strong> The last test of weaponry based at the "Funnel"; another unexpected reality disruption including explosions outside Dalnegorsk. No more interest in dumb weapons.</p>
-<p><strong><span style="text-decoration:underline;">1987—1990:</span></strong> Gorbachev's New Thinking, thaw in relations. All materials are being unfiled and classified. 'RI A's' funding and personnel are heavily reduced. Researches on intercommunications are rare and sluggish. Several small and meaningless projects are still developing.</p>
-<p><strong><span style="text-decoration:underline;">1990s:</span></strong> 'RI A' falls down, just like everything at that time.  </p>
+<p>
+At first, it looked like a great idea to visit the Cold War museum in a real bunker 65 meters below ground. We had enough volunteers — a quorum no less, just enough to make a level 8 portal in front of the museum. But the reality turned out to be soviet-ish dull and grey. First, there was a 20 minutes long film on Cold War, laughably bad, badly rigged, filled with twisted facts. Going downstairs for as much as 18 levels was a picnic comparing to that. Right after the film we had 15 minutes long imitation of a nuclear strike. Actually, this bunker was never designed for missile launches; it was an alternate command center for long-range air force. Moreover, there never was any actual control center in here, just lots and lots of communication support hardware.
+</p>
+<p>
+[pics block 1 2]
+</p>
+<p>
+Some museum displays that followed were an improvement; not a bogus comparing to "missile launch" but still, it was a makeshift. At last we had something interesting: mechanical rooms and manholes; bricked in doors to the underground; metal waterproofing; closed doors to various shafts… Last remains of a bygone authenticity kept by airsoft and quest enthusiasts. They were the first we thought of when @k0leso dragged out two binders titled "RI A Case No.398.1 Wave-2". When we asked our guide about it, he just brushed it off, obviously not being a fan of all these quest lovers. After short but intense moral struggle an inner kleptomaniac won over, and the binders were tucked into our backpacks.
+</p>
+<p>
+ 
+</p>
+<p>
+Right before leaving the bunker we skipped through these binders. Obviously we didn't want to steal any documents containing national security information. But there we just some reports, schemes, descriptions, and oddly filled-in forms. All of them had excessive crossing outs with black marker. One of the binders had old 5-inch floppy disks barbarically tucked in. We also used a black light, just for the devil of it. Much to our surprise, glyphs KNOWLEDGE INSIDE were written on one of the binders. This whole thing ultimately transformed into a joke. Security guard kept a watching eye on us, but he was overall ok with out little 'research'.
+</p>
+<p>
+ 
+</p>
+<p>
+That's how we got these documents. @inye, being eager after different odd things, took the binders to study the documents in them. Quickly, it became clear this hoax (if that was the case) was very elaborate and thorough. Whoever put these documents together, whoever was striking out everything with a black marker, they were doing that with loving care and diligence. Most of the documents were by some "RI A" dated back to the period between 1982 and 1986. One way or another, all of them were tied to projects 398.1 and 398.2, aka products 'Wave-1' and 'Wave-2'. There were enough copies, but some of these documents looked like originals, e.g. several 'staff reports' on some obviously failed experiments. There were some plans of nodes of some "sextature amplitude <redacted> modulator" that was assembled on discrete op amps. There was lots of everything. And sure enough, there were floppy disks.
+</p>
+<p>
+ 
+</p>
+<p>
+[pics block 3]
+</p>
+<p>
+ 
+</p>
+<p>
+Eventually, @Sadist found these plans and schemes rather interesting. He borrowed everything that resembled technical documentation, disappeared for a week, and returned with some exciting news: these plans were for something like a communication device, a device very strange and like no other. 'Wave-1' was a transmitter; 'Wave-2' was a receiver. Transmitter's input was designed to operate on a range from 300 Hz to 3.5 kHz (that is a normal range for human voice); a twisted modulation with a constellation that resembles QAM; two outputs — low-powered one for interface with a certain product 'Funnel-1', and an odd one put through a chain of amplifiers with some odd specifications and ending with no less odd antenna. @Sadist has already put together from scratch some part of this system, as specifications were very intriguing. He was struggling, though, with modulators and demodulators because of too peculiar hardware components. @Sadist promised to bend his brain, and we could only hope.
+</p>
+<p>
+ 
+</p>
+<p>
+At this point we could no longer overcome our curiosity. We didn't care how these document ended up in the bunker; the question was whether we are able to do something with them or not. We also had floppy disks. Jumping ahead, I must say, they helped a lot with solving the problem of peculiar hardware components. Clearly, none of us had 5-inch floppy disk drive at hand. Moreover, we weren't even sure if modern computers could read the info on these disks. Eventually we found suitable disk drive in an 8-bit computer sitting around on a shelf. It took another week to turn it on, to jury-rig a monitor (we used a TV set and a makeshift composite encoder), to refresh our knowledge in programming floppy disk drive controller… Just as expected, the file system could not be read by any standard means. We had to experiment to find a track and sector sizes. Finally, bit-by-bit, we were able to read these floppy disks.
+</p>
+<p>
+(pics block 4)
+</p>
+<p>
+ 
+</p>
+<p>
+It was easier onwards. Floppy disks were designed for an old M86 operating system, a soviet clone of a CP/M. The disks contained an assembler, a text editor, and a whole lot of source code. It seemed that the owner of the disks was working on EC-1840, a soviet computer operating on BM86 processor (a clone of the famous Intel 8086). It was just a matter of time to untangle the code and comments. It was a software version of the very same "sextature amplitude <redacted> modulator"; last edits were dated back 1990. Partial code for a demodulator was there as well, but seemed like it was unfinished. Core logic oozed away in elaborations of lots of border cases with such marks as "disturbance suppression", "distortion correction" and so on. Seems like we had everything we need to almost put together the 'Wave'. We've already forgotten about glyphs of the binder and that everything looked like a cheap hoax. The 'Wave' darted into our minds.
+</p>
+<p>
+ 
+</p>
+<p>
+We jokingly were telling each other that our wishes are no longer matter and we have to push the matter through. A lark's a lark, but each and every one of us felt more or less the same: we <strong><em>have</em></strong> to assemble the 'Wave', to send the message, to try to receive it. It took another two weeks to finish off the prototype.
+</p>
+<p>
+ 
+</p>
+<p>
+First tests came to nought. To be fair, we had some outputs, and they were 'zero'. An odd antenna picked <em>nothing</em>. Whip antenna, set to a supposed frequency of transmitter carrier, got the signal just fine, but 'Wave's' antenna input cascade was mute. The oddity of this deepened when we tried to transmit a simple sine wave with the whip and the 'Wave' got the signal just fine. In the proper physics sense it couldn't have happened, but there it was, happening.
+</p>
+<p>
+(pics block 5)
+</p>
+<p>
+ 
+</p>
+<p>
+We took the prototype to @k0leso's office. We could connect the whip to a proper frequency analyzer there and try to get a grasp on what's happening. It was all the same. If the signal was transmitted by the 'Wave-1', everything was receiving it <strong>but</strong> the 'Wave-2'. If the signal was transmitted by anything <strong>but</strong> the 'Wave-1' (on a frequency of the 'Wave'), the 'Wave-2' received something. It wasn't getting the signal clear enough for a software demodulator to catch the signal, but at least we were getting something in input cascade. Transmitter was more calibrated, so we connected receiver to the frequency analyzer to find out the exact moment the signal got lost. It was fruitless, so we decided call it a day. We were about to leave, when we finally got the signal in the receiver, but…
+</p>
+<p>
+ 
+</p>
+<p>
+First of all, we were literally at the doorway, when we got the signal. Most of the devices were turned off; @sadist007 was about to shut the receiver down, so nothing could transmit this signal. Secondly, the signal was consistent, and the analyzer's screen, set to a vector mode, looked familiar. Thirdly, our scanners started buzzing simultaneously — a portal near the office was under attack. The attacker was no other than agent __JARVIS__.
+</p>
+<p>
+  
+</p>
+<p>
+The signal stayed for couple seconds, then perished. We were staring at each other with confusion. Somebody looked out of the window; the streets were empty. Other one opened the scanner. There were no XM around the portal, and the portal itself was intact. We checked agent's Ingress profile — it was the very same __JARVIS__, with 1.2m APs and a Founder badge. There were definitely too much coincidence, and we immediately recalled those glyphs on one of the binders…
+</p>
+<p>
+ 
+</p>
+<p>
+No one got home that night; sleep was definitely out of the question as well. The frequency analyzer remained connected to the receiver, and we were monitoring its screen all night long (although, we were too afraid to touch it for some reasons). We were increasing portal level, we were using viruses on it and taking it down, we were experimenting with different mods… We turned on the transmitter and were using it in different modes. We were saying various words into the microphone in the hope of getting any result, any at all.
+</p>
+<p>
+ 
+</p>
+<p>
+__JARVIS__ never returned that night, however, the XM disappeared twice, and at the same time the 'Wave-2' was catching a signal. The first time it was bright and clear OPEN/ACCEPT glyph; the second time the signal was somewhat weaker, but we still could read a DATA glyph. We've finished our work at the crack of dawn. We turned off the transmitter, but we left the receiver and the analyzer on — @k0leso kept his eye on both devices as he had a power nap and stayed for a new workday. The analyzer was silent the whole day. That evening, we gathered together to continue our research. We've got the signal half an hour later — again, it was a PORTAL glyph and simultaneously, the XM around the portal disappeared. There was no longer any doubt that we were transmitting something to the portal and receiving some message from it.
+</p>
+<p>
+[pics block 6] 
+</p>
+<p>
+It seemed like we've found an actual soviet research on the XM that were conducted way before Lynton-Wolfe's attempts, but the idea was too bold. However we did had a working prototype of a device that was reaching out either to the portal itself or to something or someone via the portal. Besides, it put the documents we've found in some context. We got a bit carried away by all those plans and floppy disks and forgot about reports and charts in those binders. And now their time has come.
+</p>
+<p>
+[pics block 7]
+</p>
+<p>
+ 
+</p>
+<p>
+Considering all the assumptions, it all began to fall into place giving us a pretty interesting scenario. 'RI A' designed a device of voice-to-voice communication via portal network, the said Project 398. Apparent advantage of this idea is that neither ground or rocks nor water were blocking the signal. One communication station could be in the bunker, the other on a nuclear submarine or a strategic bomber. The 'Wave' product was the project's almost successful outcome. The connection was unstable, though: signal flow was unpredictable and some recurrent disturbance was appearing in the receiver input. It was spontaneous response on portal network. RI A knew nothing about glyph theory so those disturbance were never decoded. They also got stuck trying to filter out disturbance thus never finished a demodulator.
+</p>
+<p>
+ 
+</p>
+<p>
+[pics block 8]
+</p>
+<p>
+The most interesting part was a 'Funnel-1' product, an interference module with a transmitter. One of the documents on the 'Funnel-1' mentioned some "self-organizing <redacted> vergence". It obviously was somehow connected to the Tunguska meteorite impact location. RI A had only so many 'Funnels', and most of those were always used in some arms developments casually mentioned in the documents.
+</p>
+<p>
+ 
+</p>
+<p>
+Looks like it was a Techtulhu no less. Soviet scientists were trying to avoid using scarce 'Funnels', but the signal flow as well as disturbance was weak and monotonous. That make sense: they had no stable source of XM of enough capacity they could control, so they had to rely on weak unstudied portals. A powerful portal next to a transmitter could've helped in this case, but the resonator technology either didn't yet exist at that time or remained unknown to the 'Wave' team.
+</p>
+<p>
+ 
+</p>
+<p>
+The story behind transmitter interfaces was quite interesting. 'RI A' perfectly understood the concept of XM sensitivity and the connection between XM and the unconscious, emotions, and creativity. It seemed like that was the reason all arms developments were doomed to failure: no sane creative person would want to kill. Anchorpersons, poets, and writers were engaged as operators on the 'Wave' test runs. They even tried to design some nice covers for the hardware, although by that time the Soviet design tradition was already on its last legs. All these efforts had slightly increased the signal flow, but also heavily increased the disturbance.
+</p>
+<p>
+ 
+</p>
+<p>
+@Ulovka jokingly suggested, "Let's put the microphone inside a flower and give it to some emotional girl". The idea was a success: some petals glued to the microphone, @DeadMerlolo as an operator, and a level 8 portal next to the device allowed us to receive a glyph every several minutes. There were no XM around the portal at all. @Sadist put together a glyph-decoding contraption instead of a nonworking demodulator. We were carrying out "communication sessions" from time to time, however, the glyphs were more or less the same, coming in one by one: PORTAL, MESSAGE, and ACCEPT. Sometimes we were getting SEARCH and MORE.
+</p>
+<p>
+[pics block 9]
+</p>
+<p>
+ 
+</p>
+<p>
+On February 10, we held council. We seriously needed a Techtulhu in order to fully transmit messages to the portal network. Last Camp Navarro participants had access to them, and we were counting on this year's Camp. However, a trip to the US as a team was an impossible task. We couldn't fully explain how we got the documents, and we didn't want to part with a working prototype of the 'Wave', so asking actual participants for help wasn't an option as well.
+</p>
+<p>
+ 
+</p>
+<p>
+Four days later, new anomaly series were announced. Next to a much-anticipated Camp Navarro announcement was another line: Schloß Kaltenberg, a XIII century castle just an hour drive from Munich airport. That was our chance.
+</p>
+<p>
+The same evening we began putting together our application.
+</p>
+
+<h1>BEHIND THE XM RESEARCH IN THE USSR</h1>
+
+<p>
+The documents on hand are incoherent and vague. This timeline is based partly on factual information, partly on assumptions and speculations.
+</p>
+<p>
+<strong> </strong>
+</p>
+<p>
+<strong><span style="text-decoration:underline;">1900s—1910s:</span></strong> Major XM anomalies throughout Eurasia. XM concentration within the Russian Empire is increasing by leaps and bounds. Scarce portal network can't cope with XM streams. These powerful XM streams affect people's minds and emotions; revolutions are breaking out in the Russian Empire.
+</p>
+<p>
+ 
+</p>
+<p>
+<strong><span style="text-decoration:underline;">1908:</span></strong> The Tunguska event. Supposedly, that was an XM emission from some natural portal.
+</p>
+<p>
+ 
+</p>
+<p>
+<strong><span style="text-decoration:underline;">1920s:</span></strong> XM sensitivity discovered in the USSR, a Golden Age of researches. Psychoanalysis is developing; researches are conducted in Children's Home, also known as the Solidarity International Experimental Home. A connection between XM and creativity is discovered. People with high XM sensitivity are major figures in Russian culture <em>(see: Kandinsky; Rodchenko; Malevich; Mayakovski)</em>.
+</p>
+<p>
+ 
+</p>
+<p>
+<strong><span style="text-decoration:underline;">1920s:</span></strong> XM streams are slowly stabilizing.
+</p>
+<p>
+ 
+</p>
+<p>
+<strong><span style="text-decoration:underline;">1927:</span></strong> The first expedition arrives to the Tunguska event site. Some rock samples are brought to Moscow. First researches are showing these samples' capability to focus the XM.
+</p>
+<p>
+ 
+</p>
+<p>
+<strong><span style="text-decoration:underline;">1930s:</span></strong> XM experiments failures. First troubles for Vasily Stalin; the Great Purge of all XM sensitive citizens; siloviki fully classify everything they have on the XM; rock samples from the Tunguska event site are locked up in OGPU vaults: full-on oblivion.
+</p>
+<p>
+ 
+</p>
+<p>
+<strong><span style="text-decoration:underline;">1960s:</span></strong> Destalinization. KGB investigated obliterated archives.
+</p>
+<p>
+ 
+</p>
+<p>
+<strong><span style="text-decoration:underline;">1970s:</span></strong> The Cold War. Ustinov was named Minister of Defense. Undergoing ordnance alterations in the Soviet army. KGB archives provide documents on the XM. 'RI A' is created. Studies and researches in developing an XM weaponry are conducted.
+</p>
+<p>
+ 
+</p>
+<p>
+<strong><span style="text-decoration:underline;">1977:</span></strong> The first XM amplification device is assembled of rock samples fragments from the Tunguska site. Self-sustained resonance to amplify XM works much like a laser <em>(see: project 17.2, product "Taiga")</em>.
+</p>
+<p>
+ 
+</p>
+<p>
+<strong><span style="text-decoration:underline;">1977, September 20:</span></strong> First "Taiga" test run; an unexpected reality disruption outside Petrozavodsk as a result <em>(see: The Petrozavodsk phenomenon)</em>. It is clear that the arms potential is huge, but the methods to control it are unobvious.
+</p>
+<p>
+ 
+</p>
+<p>
+<strong><span style="text-decoration:underline;">1978—1984:</span></strong> "Taiga" becomes a full-bodied Tehtulhu, a device that can sustain a stable reality disruption and an XM stream (product "Funnel", project 317). Uncontrolled experiments with XM devices operator interface in order to get the unconscious involved.
+</p>
+<p>
+ 
+</p>
+<p>
+<strong><span style="text-decoration:underline;">1982:</span></strong> Researches on communication system of unlimited range by plugging into the portal network via the 'Funnel". Huge plans on using this system to communicate with submarines, protected command posts for military spacecraft, and so on.
+</p>
+<p>
+ 
+</p>
+<p>
+<strong><span style="text-decoration:underline;">1985:</span></strong> Projects 398.1, the 'Wave-1', and 398.2, the 'Wave-2', (transmitter and receiver of acoustically modulated XM via portal network) are created. A stable connection can be established once every 100 tries, the patterns are undecipherable. The use of the 'Wave-2' causes a disturbance in the portal networks with an odd quadrature-like modulation with a 60º phase shift.
+</p>
+<p>
+ 
+</p>
+<p>
+<strong><span style="text-decoration:underline;">1986, January 29:</span></strong> The last test of weaponry based at the "Funnel"; another unexpected reality disruption including explosions outside Dalnegorsk. No more interest in uncontrollable weapons.
+</p>
+<p>
+ 
+</p>
+<p>
+<strong><span style="text-decoration:underline;">1987—1990:</span></strong> Gorbachev's New Thinking, thaw in relations. All materials are being unfiled and classified. 'RI A's' funding and personnel are heavily reduced. Researches on intercommunications are rare and sluggish. Several small and meaningless projects are still developing.
+</p>
+<p>
+ 
+</p>
+<p>
+<strong><span style="text-decoration:underline;">1990s:</span></strong> 'RI A' falls apart, just like everything at that time.  
+</p>
         </div>
       </div>
     </div>
