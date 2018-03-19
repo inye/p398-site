@@ -6230,3 +6230,7 @@ html, body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.modal-lg {
+    max-width: 80% !important;
+}
